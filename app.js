@@ -1,22 +1,26 @@
-const firstname = 'Pirko'
-const surname = 'Vichmann'
-const email = 'pirko.vichmann@voco.ee'
-const department = 'IKT'
+const person = {
+    firstname: 'Kadi',
+    surname: 'Tamm',
+    age: 40,
+    email: 'kadi.tamm@gmail.com',
+    hobbies: ['tennis', 'korvpall'],
+    address: {
+        city: 'Võru',
+        country: 'Võrumaa'
+    },
+    getBirthYear: function () {
+        return 2022 - this.age
+    }
+}
 
-let result = '<ul>' +
-    '<li><b>Name:</b>' + firstname + '</li>' +
-    '<li><b>Surname:</b>' + surname + '</li>' +
-    '<li><b>Email:</b>' + email + '</li>' +
-    '<li><b>Department:</b>' + department + '</li>' +
-    '</ul>'
+let val
+val = person.getBirthYear()
+console.log(val)
 
-result =
-    <ul>
-        <li><b>Name: </b>${name}</li>
-        <li><b>Surname: </b>${surname}</li>
-        <li><b>Email: </b> ${email}</li>
-        <li><b>Department: </b>${department}</li>
-    </ul>
+for (let i = 0; i < person.hobbies.length; i++) {
+    console.log(person.hobbies[i])
+}
 
-console.log(result)
-document.body.innerHTML = result
+person.hobbies.forEach ((hobbie, index) => {
+    console.log(hobbie + ' on indeksiga ' + index)
+})
