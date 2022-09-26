@@ -1,42 +1,21 @@
-const name = 'Copia'
-const age = 41
-
-if(age > 0 && age <= 12) {
-    console.log(`${name} on laps`)
-} else if (age > 12 && age < 18) {
-    console.log(`${name} on nooruk`)
-} else {
-    console.log(`${name} on täiskasvanu`)
+console.log('for loop')
+for (let number = 0; number < 10; number ++) {
+    if (number == 5) {
+        continue
+    }
+    console.log(number)
 }
 
-let id = 100
-
-if(id === 100) {
-    console.log('Ok')
-} else {
-    console.log('Not')
+console.log('while loop')
+let number1 = 1;
+while (number1 < 11) {
+    console.log(number1)
+    number1 ++
 }
 
-console.log(id === 100 ? 'Ok': 'Not')
-
-const color = 'red'
-
-switch (color) {
-    case 'red':
-        //if it's not red, then it doesn't dispay anything
-        console.log("It's red!")
-}
-
-switch (color) {
-    case 'red':
-        console.log('Stop!')
-        break;
-    case 'yellow':
-        console.log('Attention!')
-        break;
-    case 'green':
-        console.log('Go!')
-        break;
-    default:
-        console.log('Error!')
-}
+console.log('do-while loop')
+let number2 = 11;
+do {
+    console.log(number2)
+    number2 ++
+} while (number2 < 10)
