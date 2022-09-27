@@ -1,21 +1,35 @@
-console.log('for loop')
-for (let number = 0; number < 10; number ++) {
-    if (number == 5) {
-        continue
-    }
-    console.log(number)
-}
+let val;
 
-console.log('while loop')
-let number1 = 1;
-while (number1 < 11) {
-    console.log(number1)
-    number1 ++
-}
+val = document
+val = document.all
+val = document.all[6]
+val = document.all.length
 
-console.log('do-while loop')
-let number2 = 11;
-do {
-    console.log(number2)
-    number2 ++
-} while (number2 < 10)
+val = document.head
+val = document.body
+
+val = document.doctype
+val = document.domain
+val = document.URL
+val = document.characterSet
+val = document.contentType
+
+val = document.forms
+val = document.forms[0]
+val = document.forms[0].method
+val = document.forms[0].action
+val = document.forms[0].id
+
+val = document.links
+val = document.links[1]
+val = document.links[1].id
+val = document.links[1].className
+val = document.links[1].classList
+val = document.links[1].classList[2]
+
+val = document.scripts
+val = document.scripts[0]
+val = document.scripts[1]
+val = document.scripts[1].getAttribute('src')
+
+console.log(val)
