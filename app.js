@@ -98,7 +98,6 @@ function taskFilter() {
     filter = input.value.toUpperCase();
     console.log(filter)
     ul = document.getElementsByClassName("collection");
-    //console.log(ul[0])
     li = ul[0].getElementsByClassName('collection-item');
 
     // Loop through all list items, and hide those who don't match the search query
